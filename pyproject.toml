@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "ever-gauzy-sdk"
+version = "0.1.0"
+description = "Python SDK for the Ever Gauzy API"
+readme = "README.md"
+license = {text = "AGPL-3.0-only"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Ever Co. LTD", email = "support@ever.co"}
+]
+keywords = ["gauzy", "ever-gauzy", "sdk", "api", "client"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "microsoft-kiota-abstractions>=1.0.0",
+    "microsoft-kiota-http>=1.0.0",
+    "microsoft-kiota-serialization-json>=1.0.0",
+    "microsoft-kiota-serialization-text>=1.0.0",
+    "microsoft-kiota-serialization-form>=1.0.0",
+    "microsoft-kiota-serialization-multipart>=1.0.0",
+    "microsoft-kiota-authentication-azure>=1.0.0",
+    "httpx>=0.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+
+[project.urls]
+Homepage = "https://github.com/ever-co/ever-gauzy-sdk-python"
+Documentation = "https://docs.gauzy.co"
+Repository = "https://github.com/ever-co/ever-gauzy-sdk-python"
+Issues = "https://github.com/ever-co/ever-gauzy-sdk-python/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -7,7 +7,7 @@ name = "ever-gauzy-sdk"
 version = "0.1.0"
 description = "Python SDK for the Ever Gauzy API"
 readme = "README.md"
-license = {text = "AGPL-3.0-only"}
+license = {text = "MIT"}
 requires-python = ">=3.9"
 authors = [
     {name = "Ever Co. LTD", email = "support@ever.co"}
@@ -16,7 +16,7 @@ keywords = ["gauzy", "ever-gauzy", "sdk", "api", "client"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
